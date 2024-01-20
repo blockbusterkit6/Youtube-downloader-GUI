@@ -8,4 +8,4 @@ There are several known bugs That will be addressed shortly. If you find a new b
 
 Currently, there is only an EXE for windows( The shortcut does not work. You will need to go into the file and find the exe) Python script should run On Mac and Linux as well. And installers will be created for them shortly.
 
-
+![Screenshot](readmepic/image.png)
