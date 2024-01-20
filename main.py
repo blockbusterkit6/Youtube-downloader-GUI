@@ -83,7 +83,7 @@ class MyGUI:
         if self.done_window:
             self.done_window.destroy()
 
-        ctk.set_appearance_mode("dark")  # Set appearance mode to dark
+        ctk.set_appearance_mode("system")  # Set appearance mode to dark
 
         self.done_window = ctk.CTkToplevel(self.root)
         self.done_window.geometry("400x200")
