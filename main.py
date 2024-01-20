@@ -26,7 +26,7 @@ class MyGUI:
         self.url_entry = ctk.CTkEntry(self.root, font=("Arial", 16), width=400)
         self.url_entry.pack(padx=10, pady=10)
 
-        self.location_label = ctk.CTkLabel(self.root, text="Download Location:", font=("Arial", 14))
+        self.location_label = ctk.CTkLabel(self.root, text="Download Folder:", font=("Arial", 14))
         self.location_label.pack(padx=10, pady=5)
 
         self.location_entry = ctk.CTkEntry(self.root, font=("Arial", 16), width=400)
