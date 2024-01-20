@@ -1,7 +1,6 @@
-import tkinter as tk
 import customtkinter as ctk
-from tkinter import messagebox
 from pytube import YouTube
+import tkinter as tk
 import threading
 
 class MyGUI:
@@ -66,7 +65,6 @@ class MyGUI:
             views = yt.views
 
             yd = yt.streams.get_highest_resolution()
-
             yd.download(download_location)
 
             self.show_done_window(download_location)
