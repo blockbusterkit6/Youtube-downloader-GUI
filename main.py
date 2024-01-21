@@ -6,6 +6,7 @@ import threading
 class MyGUI:
     def __init__(self):
         self.root = ctk.CTk()
+        self.root.title("Youtube Downloader")
         self.root.geometry("600x400")  # Increased width
         self.download_status_var = tk.StringVar()
         self.download_status_var.set("Ready to Download")
@@ -15,6 +16,7 @@ class MyGUI:
         self.create_widgets()
         self.root.bind("<Return>", lambda event: self.download_video())
         self.root.mainloop()
+
 
     def create_widgets(self):
         self.label = ctk.CTkLabel(self.root, text="YouTube Video Downloader", font=("Arial", 18))
@@ -83,7 +85,7 @@ class MyGUI:
         if self.done_window:
             self.done_window.destroy()
 
-        ctk.set_appearance_mode("system")  # Set appearance mode to dark
+        ctk.set_appearance_mode("system")  # Set appearance mode to system
 
         self.done_window = ctk.CTkToplevel(self.root)
         self.done_window.geometry("400x200")
